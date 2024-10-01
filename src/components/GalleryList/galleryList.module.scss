@@ -1,0 +1,55 @@
+@import "./../../assets/styles/variables";
+
+.gallery {
+  margin-bottom: 32px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.search__box {
+  font-family: $inter-light;
+  padding-top: 40px;
+  .search__empty {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: $light-gray;
+    .search__result {
+      font-weight: bold;
+    }
+  }
+
+  .search__error {
+    font-size: 14px;
+    color: $secondary-gray;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .gallery {
+    margin-bottom: 40px;
+  }
+  .gallery__list {
+    gap: 24px;
+  }
+
+  .search__box {
+    .search__empty {
+      font-size: 24px;
+    }
+  
+    .search__error {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__list {
+    gap: 32px;
+  }
+}

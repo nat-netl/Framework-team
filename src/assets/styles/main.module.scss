@@ -1,0 +1,119 @@
+@import "./_variables.scss";
+
+@font-face {
+  font-family: "CormorantSC-Medium";
+  src: url("../../assets/fonts/CormorantSC/CormorantSC-Medium.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url("../../assets/fonts/Inter/Inter-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../../assets/fonts/Inter/Inter-Medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../../assets/fonts/Inter/Inter-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  transition: all 1s;
+}
+
+body {
+  position: relative;
+  line-height: 19.38px;
+  margin-bottom: 80px;
+}
+
+.container {
+  // padding: 0 20px;
+  margin: 0 auto;
+  width: $width;
+}
+
+/*  theme  */
+:root {
+  background-color: $black;
+  color: $white;
+  &[data-theme="light"] {
+    background-color: $white !important;
+  }
+  &[data-theme="dark"] {
+    background-color: $black !important;
+  }
+}
+.visible {
+  visibility: visible !important;
+}
+
+/*  light theme  */
+.dark__background {
+  background-color: $secondary-black !important;
+}
+.light__background {
+  background-color: $white !important;
+}
+.light__secondary__background {
+  background-color: $secondary-white !important;
+}
+.light__secondary_gray__background {
+  background-color: $secondary-light-gray !important;
+}
+.dark__fill path {
+  fill: $dark-gray !important;
+}
+.light__border {
+  border: 1px solid $light-gray !important;
+}
+.light__active__border {
+  border: 1px solid $dark-gray !important;
+}
+.light__dark_gray__color {
+  color: $dark-gray !important;
+}
+.light__secondary_gray__color {
+  color: $secondary-gray !important;
+}
+.light__black__color {
+  color: $black !important;
+}
+.light__red__color {
+  color: $accent-red !important;
+}
+.light__red__border_left {
+  border-left: 2px solid $accent-red !important;
+}
+.light__border__hover:hover {
+  border-bottom: 1px solid $secondary-gray !important;
+}
+.light__background_gray__hover:hover {
+  background-color: $secondary-light-gray !important;
+}
+
+
+@media screen and (min-width: 320px) {
+  body {
+    margin-bottom: 100px;
+  }
+}

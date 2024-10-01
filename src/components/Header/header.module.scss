@@ -1,0 +1,50 @@
+@import "./../../assets/styles/variables";
+
+.header {
+  padding: 12px 0;
+  margin-bottom: 27px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.theme {
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.logo__img {
+  width: 73px;
+  height: 16px;
+}
+
+@media screen and (min-width: 320px) {
+ 
+}
+
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 24px 0;
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 20px 0;
+  }
+  .logo__img {
+    width: 91px;
+    height: 20px;
+  }
+}

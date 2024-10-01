@@ -1,0 +1,63 @@
+@import "./../../assets/styles/variables";
+
+.pagination__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination__list {
+  display: flex;
+  gap: 4px;
+  &__item, .pagination__list__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    aspect-ratio: 1 / 1;
+    color: $light-gray;
+    border-bottom: 1px solid transparent !important;
+  }
+}
+.pagination__list__item:hover {
+  border-bottom: 1px solid $dark-gray !important;
+}
+
+.button__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  &:hover {
+    background-color: $secondary-black;
+    border-radius: 4px;
+  }
+
+  &:disabled {
+    background-color: unset !important;
+  }
+}
+
+.pagination__box .active {
+  background-color: $secondary-black;
+  font-family: $inter-medium;
+  border-radius: 4px;
+
+  &:hover {
+    border-bottom: 1px solid transparent !important;
+  }
+}
+
+.button__arrow, .pagination__list__item {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+.button__arrow:disabled, .pagination__box .active {
+  cursor: auto;
+}

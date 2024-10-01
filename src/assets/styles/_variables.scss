@@ -1,0 +1,30 @@
+@use "sass:math";
+
+/*  colors  */
+$white: #FFFFFF;
+$black: #121212;
+$light-gray: #DEDEDE;
+$dark-gray: #575757;
+$secondary-white: #FCFCFC;
+$secondary-black: #1A1818;
+$secondary-gray: #9C9C9C;
+$secondary-light-gray: #e3e3e3;
+$accent-red: #9B4B4B;
+$accent-gold: #AB8956;
+
+/*  fonts  */
+$cormorantSC: "CormorantSC-Medium";
+$inter-light: "Inter-Light";
+$inter-medium: "Inter-Medium";
+$inter-bold: "Inter-Bold";
+
+/*  width  */
+$width: percentage(math.div(1240, 1440));
+
+/*  padding  */
+$padding-desktop: 100px;
+$padding-mobile: 20px;
+
+
+
+
