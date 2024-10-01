@@ -5,6 +5,7 @@ import svgrPlugin from "vite-plugin-svgr";
 import { resolve } from 'path';
 
 export default defineConfig({
+  base: "/Framework-team/",
   plugins: [react(), svgrPlugin({
     svgrOptions: {
       icon: true, 
