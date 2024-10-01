@@ -19,6 +19,9 @@
     color: $light-gray;
     border-bottom: 1px solid transparent !important;
   }
+  .pagination__list__dots {
+    align-self: center;
+  }
 }
 .pagination__list__item:hover {
   border-bottom: 1px solid $dark-gray !important;
